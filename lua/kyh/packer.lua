@@ -50,5 +50,7 @@ return require('packer').startup(function(use)
   use('ggandor/leap.nvim')
   use('echasnovski/mini.nvim')
   use('mrjones2014/smart-splits.nvim')
+  use{'michaelb/sniprun', run='sh install.sh'}
+  use('rcarriga/nvim-notify')
 end)
 

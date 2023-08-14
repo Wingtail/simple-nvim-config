@@ -33,6 +33,10 @@ local mappings = {
 		a = { mark.add_file, "Harpoon Mark" },
 		"Aerial Toggle / Harpoon"
 	},
+	f = {
+		f = { '<Plug>SnipRun', "SnipRun" },
+		"Snip Run"
+	},
 	p = {
 		v = { vim.cmd.NvimTreeToggle, "NvimTreeToggle"},
 		f = { builtin.find_files, "Find Files (Telescope)"},
@@ -50,3 +54,4 @@ local mappings = {
 
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)
+vim.api.nvim_set_keymap('v', 'f', '<Plug>SnipRun', {silent = true})

@@ -56,6 +56,15 @@ local mappings = {
 		l = { toggle_lazygit, "LazyGit" },
 		"Toggle Terminal"
 	},
+	x = {
+		x = { function() require("trouble").open() end, "Trouble Toggle" },
+		"Trouble"
+	},
+	b = {
+		b = { function() vim.api.nvim_set_hl(0, "Normal", { bg = "none" }); vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"}) end, "Background Transparent"},
+		f = { function() ColorEm() end, "Background Full"},
+		"Background"
+	}
 }
 
 local opts = { prefix = '<leader>' }

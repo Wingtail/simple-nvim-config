@@ -26,11 +26,17 @@ local toggle_lazygit = function()
 end
 local builtin = require('telescope.builtin')
 local mark = require("harpoon.mark")
+local ui = require("harpoon.ui")
 
 local mappings = {
 	a = {
 		t = { "<cmd>AerialToggle! left<CR>", "Aerial Toggle" },
 		a = { mark.add_file, "Harpoon Mark" },
+		h = { function() ui.nav_file(1) end, "Harpoon 1" },
+		r = { function() ui.nav_file(2) end, "Harpoon 2" },
+		p = { function() ui.nav_file(3) end, "Harpoon 3" },
+		o = { function() ui.nav_file(4) end, "Harpoon 4" },
+		n = { function() ui.nav_file(5) end, "Harpoon 5" },
 		"Aerial Toggle / Harpoon"
 	},
 	f = {

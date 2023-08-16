@@ -64,7 +64,8 @@ local mappings = {
 		b = { function() vim.api.nvim_set_hl(0, "Normal", { bg = "none" }); vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"}) end, "Background Transparent"},
 		f = { function() ColorEm() end, "Background Full"},
 		"Background"
-	}
+	},
+	h = { vim.cmd.noh, "Turn off highlight" }
 }
 
 local opts = { prefix = '<leader>' }

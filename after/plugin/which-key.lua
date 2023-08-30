@@ -37,11 +37,13 @@ local mappings = {
 		p = { function() ui.nav_file(3) end, "Harpoon 3" },
 		o = { function() ui.nav_file(4) end, "Harpoon 4" },
 		n = { function() ui.nav_file(5) end, "Harpoon 5" },
-		"Aerial Toggle / Harpoon"
+		b = { function() require("buffer_manager.ui").toggle_quick_menu() end, "Toggle Buffer Manager" },
+		"Aerial Toggle / Harpoon / Buffer Manager"
 	},
 	f = {
 		f = { '<Plug>SnipRun', "SnipRun" },
-		"Snip Run"
+		m = { function() vim.lsp.buf.format() end, "Format" },
+		"Snip Run / Format"
 	},
 	p = {
 		v = { vim.cmd.NvimTreeToggle, "NvimTreeToggle"},

@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/younghoon/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
+  ["buffer_manager.nvim"] = {
+    loaded = true,
+    path = "/home/younghoon/.local/share/nvim/site/pack/packer/start/buffer_manager.nvim",
+    url = "https://github.com/j-morano/buffer_manager.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/younghoon/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -123,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/younghoon/.local/share/nvim/site/pack/packer/start/mini.nvim",
     url = "https://github.com/echasnovski/mini.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/younghoon/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,

@@ -55,5 +55,12 @@ return require('packer').startup(function(use)
 	use{'folke/trouble.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
+	use{'j-morano/buffer_manager.nvim',
+		requires = { 'nvim-lua/plenary.nvim' }
+	}
+	use { 'jose-elias-alvarez/null-ls.nvim', 
+		requires = { 'nvim-lua/plenary.nvim' }
+	}
+
 end)
 
